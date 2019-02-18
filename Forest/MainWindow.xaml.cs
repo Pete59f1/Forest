@@ -22,11 +22,12 @@ namespace Forest
     /// </summary>
     public partial class MainWindow : Window, ISubscriber
     {
+        Game.Game game;
         public MainWindow()
         {
+            game = new Game.Game();
             InitializeComponent();
         }
-
         //game.RegisterSubscriber(this);
 
         //Observer

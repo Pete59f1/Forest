@@ -30,5 +30,10 @@ namespace Game
             }
         }
         //Observer
+
+        public Game ()
+        {
+            Deck.GenerateCardDeck();
+        }
     }
 }
