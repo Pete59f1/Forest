@@ -22,13 +22,11 @@ namespace Forest
     /// </summary>
     public partial class MainWindow : Window, ISubscriber
     {
-        Game.Game game;
+        MyGame game;
         public MainWindow()
         {
-            game = new Game.Game();
             InitializeComponent();
         }
-        //game.RegisterSubscriber(this);
 
         //Observer
         public void Update(IPublisher publisher)
@@ -36,5 +34,12 @@ namespace Forest
             
         }
         //Observer
+
+        private void BtnNewGame_Click(object sender, RoutedEventArgs e)
+        {
+            game = new MyGame();
+            game.RegisterSubscriber(this);
+            btnNewGame.IsEnabled = false;
+        }
     }
 }

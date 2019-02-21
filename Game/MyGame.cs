@@ -7,7 +7,7 @@ using Interface;
 
 namespace Game
 {
-    public class Game: IPublisher
+    public class MyGame: IPublisher
     {
         //Observer
         List<ISubscriber> subs = new List<ISubscriber>();
@@ -31,9 +31,14 @@ namespace Game
         }
         //Observer
 
-        public Game ()
+        public MyGame ()
         {
             Deck.GenerateCardDeck();
+        }
+
+        public void Turn()
+        {
+
         }
     }
 }

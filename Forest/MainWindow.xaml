@@ -7,6 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Button Name="btnNewGame" Content="Nyt Spil" HorizontalAlignment="Left" Margin="55,65,0,0" VerticalAlignment="Top" Width="75" Click="BtnNewGame_Click"/>
+        <Label Name="lblPlayer1" Content="Spiller 1: Points" HorizontalAlignment="Left" Margin="230,67,0,0" VerticalAlignment="Top" IsEnabled="False"/>
+        <Label Name="lblPlayer4" Content="Spiller 4: Points" HorizontalAlignment="Left" Margin="230,293,0,0" VerticalAlignment="Top" IsEnabled="False"/>
+        <Label Name="lblPlayer2" Content="Spiller 2: Points" HorizontalAlignment="Left" Margin="611,67,0,0" VerticalAlignment="Top" IsEnabled="False"/>
+        <Label Name="lblPlayer3" Content="Spiller 3: Points" HorizontalAlignment="Left" Margin="611,293,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.558,1.731" IsEnabled="False"/>
+
     </Grid>
 </Window>
