@@ -40,6 +40,10 @@ namespace Forest
             game = new MyGame();
             game.RegisterSubscriber(this);
             btnNewGame.IsEnabled = false;
+            lblPlayer1.IsEnabled = true;
+            lblPlayer2.IsEnabled = true;
+            lblPlayer3.IsEnabled = true;
+            lblPlayer4.IsEnabled = true;
         }
     }
 }
